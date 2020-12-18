@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.math.*;
+
+public class calculator {
+
+	public static void main(String[] args) {
+	
+	    Scanner input = new Scanner(System.in);
+	
+	    int num1;
+	    int num2;
+	
+	    System.out.print("Enter First Integer: ");
+	    num1 = input.nextInt();
+	
+	    System.out.print("Enter Second Integer: ");
+	    num2 = input.nextInt();
+	
+	
+	    System.out.println("The sum is " + Math.addExact(num1, num2));
+	
+	    System.out.println("The difference is " + Math.subtractExact(num1, num2));
+	
+	    System.out.println("The product is " + Math.multiplyExact(num1, num2));
+	
+	    System.out.println("The First Integer divided by the Second Integer is " + Math.floorDiv(num1, num2));
+	    
+	    System.out.println("sin(num1) = " + Math.sin(num1));
+
+	    System.out.println("cos(num1) = " + Math.cos(num1));
+	    
+	    System.out.println("tan(num1) = " + Math.tan(num1));
+
+	}
+}
